@@ -1,5 +1,29 @@
-# Proyecto Final
+# E-Commerce Cafetería ☕
 
+Este proyecto es una tienda online desarrollada para una cafetería, permitiendo a los usuarios explorar y comprar productos relacionados con el café. La aplicación está construida con las siguientes tecnologías:
+
+- **Frontend:** React + Tailwind CSS
+- **Backend:** Node.js + Express
+- **Base de datos:** PostgreSQL
+
+## Funcionalidades principales
+
+- 🛍️ Vistas con cards de cafés y accesorios.
+- 📱 Diseño 100% responsivo (adaptado a móviles y escritorio).
+- 🔍 Visualización detallada de cada producto.
+- 🛒 Agregar productos al carrito de compras.
+- ⚙️ Backend conectado a base de datos para gestión de productos.
+
+## Estado del proyecto
+
+🚀 En desarrollo activo. Próximas funciones:
+- Finalizar compra.
+- Autenticación de usuarios.
+- Administración de productos desde un panel privado.
+
+## Instalación (próximamente)
+
+Proyecto pensado para ser desplegado en un entorno cloud (AWS / Render).
 
 ## Clonación del Repositorio
 
