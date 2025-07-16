@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-negro text-gray-200 py-10 px-5 md:px-20">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Column 1 */}
+       
         <div>
           <h3 className="text-yellow-500 font-semibold mb-4">Links útiles</h3>
           <ul className="space-y-2">
@@ -26,7 +26,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 2 */}
+   
         <div>
           <h3 className="text-yellow-500 font-semibold mb-4">Tienda</h3>
           <ul className="space-y-2">
@@ -43,7 +43,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4 */}
+       
         <div>
           <h3 className="text-yellow-500 font-semibold mb-4">Compañia</h3>
           <ul className="space-y-2">
