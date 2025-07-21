@@ -64,7 +64,7 @@ const Footer = () => {
         {/* Column 5 - Contact */}
         <div>
           <h3 className="text-yellow-500 font-semibold mb-4">
-            Necesitas ayuda? Contactanos!!
+            ¿Necesitas ayuda? Contactanos
           </h3>
           <p className="text-gray-100">+99 0214 2542 223</p>
           <p className="text-gray-100 mt-4">Lunes - Viernes: 9:00 - 20:00</p>
