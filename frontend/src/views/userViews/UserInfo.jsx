@@ -25,11 +25,10 @@ export const UserInfo = () => {
 
   return (
    <>
-    <div className="bg-white w-full flex flex-col gap-5 px-3 md:px-16 lg:px-28 md:flex-row text-[#161931]">
+    <div className="bg-white w-full flex flex-col gap-5 px-3 py-6 md:px-16 lg:px-28 md:flex-row text-[#161931]">
       {/* Sidebar */}
       <aside className="hidden py-4 md:w-1/3 lg:w-1/4 md:block">
-        <div className="sticky flex flex-col gap-2 p-4 text-sm border-r border-negro-100 top-12">
-          <h2 className="pl-3 mb-4 text-2xl font-semibold">Settings</h2>
+        <div className="sticky flex flex-col gap-2 py-8 px-4 text-sm border-r border-negro-100 top-12">
           <a href="#" className="flex items-center px-3 py-2.5 font-bold bg-white text-negro-900 border rounded-full">
             Mi cuenta
           </a>
@@ -39,12 +38,6 @@ export const UserInfo = () => {
           <Link to="/edit-post">
           <a href="#" className="flex items-center px-3 py-2.5 font-semibold hover:text-negro-900 hover:border hover:rounded-full">Tu artículos de blog</a>
           </Link>
-          <a href="#" className="flex items-center px-3 py-2.5 font-semibold hover:text-negro-900 hover:border hover:rounded-full">
-            Notificaciones
-          </a>
-          <a href="#" className="flex items-center px-3 py-2.5 font-semibold hover:text-negro-900 hover:border hover:rounded-full">
-            Cuenta PRO
-          </a>
         </div>
       </aside>
 
@@ -71,27 +64,27 @@ export const UserInfo = () => {
                 <div className="flex flex-col items-center w-full mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0 sm:mb-6">
                   <div className="w-full">
                     <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-negro-900">
-                      Primer nombre
+                      Primer nombre*
                     </label>
                     <input
                       type="text"
                       id="first_name"
                       className="bg-negro-50 border border-negro-300 text-negro-900 text-sm rounded-lg focus:ring-negro-500 focus:border-negro-500 block w-full p-2.5"
-                      placeholder=""
-                      defaultValue="Jane"
+                      placeholder="Ingesa tu nombre"
+                      defaultValue=""
                       required
                     />
                   </div>
                   <div className="w-full">
                     <label htmlFor="last_name" className="block mb-2 text-sm font-medium text-negro-900">
-                      Apellido
+                      Apellido*
                     </label>
                     <input
                       type="text"
                       id="last_name"
                       className="bg-negro-50 border border-negro-300 text-negro-900 text-sm rounded-lg focus:ring-negro-500 focus:border-negro-500 block w-full p-2.5"
-                      placeholder=""
-                      defaultValue="Ferguson"
+                      placeholder="Ingresa tu apellido"
+                      defaultValue=""
                       required
                     />
                   </div>
