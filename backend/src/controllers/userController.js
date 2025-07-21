@@ -9,11 +9,10 @@ export const createUser = async (req, res) => {
 
     // Verifica si el usuario ya existe
     const existingUser = await UserModel.findByEmail(email);
+    console.log("Resultado de findByEmail:", existingUser);
     if (existingUser) {
       return res.status(400).json({ message: "El usuario ya existe" });
     }
-
- 
 
     // Crea el nuevo usuario en la base de datos
     const newUser = await UserModel.create(

@@ -4,6 +4,13 @@ import { pool } from "../db/config.js";
 const UserModel = {
   // Función para crear un usuario en la base de datos
   async create(first_name, last_name, email, password) {
+    console.log(
+      "Intentando crear usuario en la tabla users:",
+      first_name,
+      last_name,
+      email
+    );
+
     try {
       const saltRounds = 10;
       const hashedPassword = await bcrypt.hash(password, saltRounds);
@@ -24,6 +31,7 @@ const UserModel = {
 
   // Función para obtener un usuario por email
   async findByEmail(email) {
+    console.log("Buscando usuario en la tabla users:", email);
     try {
       const query = `SELECT * FROM users WHERE email = $1`;
       const result = await pool.query(query, [email]);
